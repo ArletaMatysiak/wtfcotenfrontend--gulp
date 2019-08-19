@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>snow.ly </title>
+    <link href="style/normalize.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="site-shop site-shop--js">
+
+    <header class="site-header">
+
+        <div>
+            <nav class="navigation">
+                <ul class="navigation__list navigation__list--js">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="podstrona.html">O nas</a>
+                    </li>
+                    <li class="navigation__brand">
+                        <h1>
+                            snow.ly
+                        </h1>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--js" id="alert" href="sklep.html">Sklep online</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">|||</button>
+        </div>
+
+    </header>
+
+
+    <main class="contact-site">
+
+        <header class="contact-site contact-site__header">
+            <h1> Jak pomożemy Ci pomóc?</h1>
+        </header>
+
+        <section class="contact">
+            <div class="contact__box">
+                <h2 class="contact__header"> Kontakt </h2>
+                <p class="contact__paragraph"> Snow.ly <br>
+                    ul. Łąkowa 39/44 <br>
+                    80-769 Gdańsk <br>
+                    Polska <br>
+                    REGON: 00000000000 <br>
+                    NIP: 555-666-777-888 <br>
+                    Nr KRS: 000000000</p>
+            </div>
+            <div class="contact__box">
+                <h2 class="contact__header"> Infolinia </h2>
+                <p class="contact__paragraph"> PN-PT 9:00-19:00 <br>
+                    SB 10:00-17:00 </p><br>
+                <p> 800 555 555 </p>
+            </div>
+
+        </section>
+
+        <section class="contact-form">
+            
+
+            <form class="contact-form__form" action="http://dev.cotenfrontend.pl"  method="POST">
+
+                <div class="contact-form__message">
+
+                    <div>
+                        <h2 class="contact__header"> Napisz do nas: </h2>
+                    </div>
+
+                    <div class="contact-form__data">
+
+                        <p>
+                            <label for="name">Imię: </label>
+                            <input required type="text" placeholder="..." name="name" id="name">
+                        </p>
+
+                        <p>
+                            <label for="surname">Nazwisko: </label>
+                            <input type="text" name="surname" placeholder="..." id="surnname">
+                        </p>
+
+                        <p>
+                            <label for="age"> E-mail </label>
+                            <input type="email" name="email" id="email" placeholder="...@.pl">
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="contact-form__select">
+                    <p>
+                        <label for="select"> Wybierz dział</label>
+                        <select name="select" id="select">
+                            <option value="user selected Shop online"> Sklep Online </option>
+                            <option value="user selected Shops"> Sklepy stacjonarne </option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="contact-form__text" >
+                    <p>
+                        <label for="textarea"> Wpisz swoją wiadomość: </label><br>
+                        <textarea class="contact-form__textarea" name="textarea " id="textarea "></textarea>
+                    </p>
+                </div>
+
+                <input type="submit" value="wyślij">
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="js/main.js">
+    </script>
+
+</body>
+
+</html>
