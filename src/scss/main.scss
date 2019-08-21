@@ -336,7 +336,7 @@ body {
     "header header"
     "about content";
   grid-column-gap: 16px;
-    &__header 
+    &__header {
       margin: 0px auto;
       grid-area: header;
     }
@@ -347,6 +347,8 @@ body {
           "about";
       }
   }
+
+
 
 .contact {
   margin: 0px auto;
@@ -370,9 +372,6 @@ body {
   box-sizing: border-box;
   margin: 1px;
 }
-
-
-
 
 
 
@@ -452,65 +451,22 @@ body {
 
 
 
-.site {
-  background-image: url("../jpg/road.jpeg");
-  min-height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: contain;
-}
-
-.site-claim {
-  position: 50px;
-}
-
-.site-image {
-  top: 0px;
-  text-decoration: none;
-  width: 100vw;
-  box-sizing: border-box;
-}
-
-.section {
-  background-color: rgba(255, 255, 255, 0.495);
-  top: 500px;
-  margin: 100px auto;
-  width: 30vw;
-  max-height: 300px;
-  overflow: scroll;
-  text-align: center;
-}
-
-.site-main__footer {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-
-
-
-
-
 .subscription {
   box-sizing: border-box;
   padding-top: 145px;
-}
-
-.subscription__container {
-  box-sizing: border-box;
-  padding-top: 16px;
+    &__container {
+      box-sizing: border-box;
+      padding-top: 16px;
+    }
+    &__preferences {
+      box-sizing: border-box;
+      padding-top: 45px;
+    }
 }
 
 .subscription__container--email:focus {
   background: #f6bb01;
 }
-
-.subscription__preferences {
-  box-sizing: border-box;
-  padding-top: 45px;
-}
-
 
 
 
