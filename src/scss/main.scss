@@ -376,142 +376,97 @@ body {
 
 
 
-
-
-.grid {
-  display: grid;
-  grid-template-areas: "header header header" "content.menu" "footer footer footer";
-  grid-template-columns: [pierwsza] 1fr [druga] 100px [ostatnia] 200px;
-  grid-template-rows: 100px 300px;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-}
-
-.grid__item {
-  background: tomato;
-  padding: 16px;
-  margin: 16px;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: span 2;
-  z-index: -1;
-}
-
-.header2 {
-  grid-area: header;
-  text-align: center;
-}
-
-.article2 {
-  grid-area: content;
-}
-
-.navigation2 {
-  grid-area: menu;
-}
-
-.footer2 {
-  grid-area: footer;
-}
-
-.header {
-  color: #020203;
-  font-size: 70px;
-  padding: 5px;
-  max-width: 1200px;
-  margin: 50px auto;
-}
-
-.form {
-  max-width: 800px;
-  width: 100%;
-  text-align: center;
-}
-
 .navigation {
   box-sizing: border-box;
   top: 0px;
   text-decoration: none;
   position: fixed;
+    &__brand {
+      margin: 5px;
+      padding: 5px;
+      color: black;
+      text-decoration: none;
+      font-size: 24px;
+      align-self: center;
+        &--small {
+          font-size: 12px;
+        }
+    @media (max-width: 640px) {
+      align-self: flex-start;
+      order: 0;
+      }
+    }
+    &__item {
+      margin: 5px;
+      border-bottom: 1px solid black;
+      padding: 5px;
+      align-self: center;
+      @media (max-width: 640px) {
+        align-self: flex-start;
+        order: 1;
+      }
+    
+    }
+    &__link {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    &__list {
+      margin: 5px;
+      width: 100vw;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+        &--visible {
+          display: flex;
+        @media (max-width: 640px) {
+          flex-direction: column;
+          justify-content: flex-start;
+          display: flex;
+          }
+        }
+    @media (max-width: 640px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      display: none;
+        }
+    }
+    &__switcher {
+      display: none;
+    @media (max-width: 640px) {
+      display: flex;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      }
+    }
+  @media (max-width: 640px) {
+      position: static;
+    }    
 }
 
-.navigation__link {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-}
 
-.navigation__list {
-  margin: 5px;
-  width: 100vw;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.navigation__list--visible {
-  display: flex;
-}
 
-.navigation__brand--small {
-  font-size: 12px;
-}
 
-.navigation__brand {
-  margin: 5px;
-  padding: 5px;
-  color: black;
-  text-decoration: none;
-  font-size: 24px;
-  align-self: center;
-}
 
-.navigation__item {
-  margin: 5px;
-  border-bottom: 1px solid black;
-  padding: 5px;
-  align-self: center;
-}
 
-.navigation__switcher {
-  display: none;
-}
 
-@media (max-width: 640px) {
-  .navigation__brand {
-    align-self: flex-start;
-    order: 0;
-  }
-  .navigation__item {
-    align-self: flex-start;
-    order: 1;
-  }
-  .navigation__list {
-    flex-direction: column;
-    justify-content: flex-start;
-    display: none;
-  }
-  .navigation__list--visible {
-    flex-direction: column;
-    justify-content: flex-start;
-    display: flex;
-  }
-  .navigation__switcher {
-    display: flex;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-  }
 
-  .navigation {
-    position: static;
-  }
-}
+
+
+
+
+
+
+
+
+
 
 .site {
   background-image: url("../jpg/road.jpeg");
@@ -548,6 +503,9 @@ body {
   padding-bottom: 16px;
 }
 
+
+
+
 .subscription {
   box-sizing: border-box;
   padding-top: 145px;
@@ -567,9 +525,6 @@ body {
   padding-top: 45px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
+
+
