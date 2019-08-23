@@ -57,19 +57,22 @@ body {
     width: 90vw;
     margin: 0px auto;
     &--story1 {
-      padding-top: 150px;
+      //padding-top: 150px;
       padding-bottom: 150px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      @media (max-width: $tablet) {
+        flex-direction: column;
+        }
     }
     &--story2 {
       padding-top: 150px;
       padding-bottom: 150px;
-      display: flex;
+      //display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
         flex-direction: column-reverse;
       }
     }
@@ -79,7 +82,7 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
         flex-direction: column-reverse;
       }
     }
@@ -124,12 +127,16 @@ body {
     width: 50vw;
     height: 50vh;
     background: white;
+    @media (max-width: 640px) {
+      width: 50vw;
+      height: 20vh;
+    }
   }
 
   &__size {
     align-self: flex-end;
     &--list {
-      color: #f6bb01;
+      color: $yellow;
       list-style: none;
     }
   }
@@ -141,7 +148,7 @@ body {
       background: rgb(133, 133, 133);
     }
     &--th {
-      background: #f6bb01;
+      background: $yellow;
       padding: 5px;
     }
     &--td {
@@ -159,7 +166,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
       flex-direction: column;
     }
   }
@@ -178,14 +185,14 @@ body {
     grid-template-columns: 800px 1fr;
     grid-template-rows: 680px 1fr;
     grid-column-gap: 5px;
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
       grid-template-columns: 1fr;
     }
     &--photo {
       display: flex;
       justify-content: center;
       align-content: center;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
           order: 2;
         }
     }
@@ -200,7 +207,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
         order: 1;
     }
   }
@@ -229,7 +236,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-content: center;
-        @media (max-width: 640px) {
+        @media (max-width: $tablet) {
           grid-template-columns: 1fr;
       }
   }
@@ -241,7 +248,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 800px;
     grid-column-gap: 16px;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
           grid-template-columns: 1fr;
       }
     &--box {
@@ -257,7 +264,7 @@ body {
       background: white;
       padding: 0px;
       display: flex;
-        @media (max-width: 640px) {
+        @media (max-width: $tablet) {
             order: 2;
           }
       }
@@ -267,7 +274,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-          @media (max-width: 640px) {
+          @media (max-width: $tablet) {
             order: 1;
         }
       }
@@ -283,7 +290,7 @@ body {
         max-width: 600px;
         padding: 5px;
         margin: 5px;
-        color: red;
+        color: $yellow;
       }
 
       &--small {
@@ -323,7 +330,7 @@ body {
       padding-top: 16px;
       text-decoration: none;
       &:hover {
-        color: #f6bb01;
+        color: $yellow;
       }
   }
 }
@@ -340,7 +347,7 @@ body {
       margin: 0px auto;
       grid-area: header;
     }
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
         grid-template-areas:
           "header"
           "content"
@@ -390,7 +397,7 @@ body {
         &--small {
           font-size: 12px;
         }
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
       align-self: flex-start;
       order: 0;
       }
@@ -400,7 +407,7 @@ body {
       border-bottom: 1px solid black;
       padding: 5px;
       align-self: center;
-      @media (max-width: 640px) {
+      @media (max-width: $tablet) {
         align-self: flex-start;
         order: 1;
       }
@@ -421,13 +428,13 @@ body {
       justify-content: space-around;
         &--visible {
           display: flex;
-        @media (max-width: 640px) {
+        @media (max-width: $tablet) {
           flex-direction: column;
           justify-content: flex-start;
           display: flex;
           }
         }
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
       flex-direction: column;
       justify-content: flex-start;
       display: none;
@@ -435,7 +442,7 @@ body {
     }
     &__switcher {
       display: none;
-    @media (max-width: 640px) {
+    @media (max-width: $tablet) {
       display: flex;
       background: none;
       border: none;
@@ -444,7 +451,7 @@ body {
       right: 16px;
       }
     }
-  @media (max-width: 640px) {
+  @media (max-width: $tablet) {
       position: static;
     }    
 }
@@ -465,7 +472,7 @@ body {
 }
 
 .subscription__container--email:focus {
-  background: #f6bb01;
+  background: $yellow;
 }
 
 

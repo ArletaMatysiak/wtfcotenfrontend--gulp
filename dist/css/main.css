@@ -711,7 +711,8 @@ body {
   padding-top: 6%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header" "about content";
+      grid-template-areas: "header header"
+ "about content";
   grid-column-gap: 16px; }
 
 .contact-site__header {
@@ -753,7 +754,9 @@ body {
 
 @media (max-width: 640px) {
   .contact-site {
-        grid-template-areas: "header" "content" "about"; }
+        grid-template-areas: "header"
+ "content"
+ "about"; }
   .contact-site__header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
