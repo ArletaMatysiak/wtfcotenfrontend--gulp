@@ -20,7 +20,7 @@ navigationList.classList.toggle('navigation__list--visible');
     
 
 
-const button = document.querySelector('.article___button--js');
+const button = document.querySelector('.article-button--js');
 console.log(button)
 
 function oknoAlert () {
@@ -35,10 +35,10 @@ document.querySelector('.navigation__link--js').addEventListener('click', functi
 
 
 button.addEventListener('click', (e) => {
-const header = document.querySelector('.article__title--js');
-header.innerHTML = 'klik, klik';
-header.classList.toggle('article__title--red')
-if (header.classList.contains('article__title--red')) {
+const header = document.querySelector('.article-about__title--js');
+header.innerHTML = 'tytuł2';
+header.classList.toggle('article-about__title--yellow')
+if (header.classList.contains('article-about__title--yellow')) {
     console.log('jest klasa');
 } else { 
     console.log('nie ma klasy');
