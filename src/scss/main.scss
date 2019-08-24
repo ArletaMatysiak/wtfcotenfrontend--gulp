@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Lato:700,900|Roboto+Slab:400,700&display=swap&subset=latin-ext');
 
 * html {
   box-sizing: border-box;
@@ -18,6 +19,7 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #e4e4e2, #c6c7c9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Lato';
 }
 
 .about {
@@ -314,6 +316,7 @@ body {
     max-width: 600px;
     padding: 5px;
     margin: 5px; 
+    font-family: 'Roboto Lab';
       &--yellow {
         box-sizing: border-box;
         max-width: 600px;
@@ -463,6 +466,9 @@ body {
 
 .site-image {
   max-width: 100vw;
+  @media (max-width: $mobile) {
+    display: none;
+  }   
 }
 
 .subscription {
