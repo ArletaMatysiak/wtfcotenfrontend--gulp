@@ -1,10 +1,15 @@
-# wtf-gulp-starter
+![screen](dist/img/mainScreen.png)
 
-`npm install -g gulp-cli`
+# wtfcotenfrontend--gulp
+ 
+ Strona powstaje w trakcie [WtF: Co ten frontend](https://cotenfrontend.pl/)
 
-`npm install`
+## odwiedź [github pages](https://arletamatysiak.github.io/wtfcotenfrontend--gulp/)
 
-`gulp`
+- HTML
+- CSS
+- SASS
+- java script
 
-To publish your page using github pages use `npm run deploy`
-"# wtfcotenfrontend--gulp" 
+- git
+- gulp
