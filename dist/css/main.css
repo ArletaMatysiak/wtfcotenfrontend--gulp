@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:700,900|Roboto+Slab:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Prompt:400,600&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -319,16 +319,7 @@ template {
           box-sizing: inherit; }
 
 body {
-  background: #e4e4e2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e4e4e2, #c6c7c9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#e4e4e2), to(#c6c7c9));
-  background: -webkit-linear-gradient(left, #e4e4e2, #c6c7c9);
-  background: -o-linear-gradient(left, #e4e4e2, #c6c7c9);
-  background: linear-gradient(to right, #e4e4e2, #c6c7c9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Lato'; }
+  font-family: 'Crimson Text'; }
 
 .about {
   overflow: hidden; }
@@ -366,6 +357,7 @@ body {
       .about__box--itemLink:visited {
         color: whitesmoke; }
   .about__details {
+    padding-top: 250px;
     width: 90vw;
     margin: 0px auto; }
     .about__details--story1 {
@@ -455,7 +447,7 @@ body {
     max-width: 600px;
     padding-left: 50px;
     font-size: 24px;
-    color: white; }
+    color: black; }
     .about__paragraph--footer {
       font-size: 16px;
       color: black; }
@@ -557,9 +549,6 @@ body {
             -ms-flex-order: 2;
                 order: 2; } }
     .article-about__photo--placement {
-      width: 600px;
-      height: 600px;
-      background: white;
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
@@ -573,8 +562,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 700px;
   grid-template-columns: 1fr 700px;
-  -ms-grid-rows: 1fr 650px;
-  grid-template-rows: 1fr 650px;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   grid-column-gap: 5px; }
   @media (max-width: 768px) {
     .article-collection {
@@ -655,11 +644,11 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .article-item__photo {
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 400px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: white;
+    background: gray;
     padding: 0px;
     display: -webkit-box;
     display: -ms-flexbox;

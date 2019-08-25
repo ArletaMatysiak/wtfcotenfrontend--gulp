@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Lato:700,900|Roboto+Slab:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Prompt:400,600&display=swap&subset=latin-ext');
 
 * html {
   box-sizing: border-box;
@@ -13,13 +13,7 @@
 }
 
 body {
-  background: #e4e4e2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e4e4e2, #c6c7c9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e4e4e2, #c6c7c9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Lato';
+  font-family: 'Crimson Text';
 }
 
 .about {
@@ -56,6 +50,7 @@ body {
   }
 
   &__details {
+    padding-top: 250px;
     width: 90vw;
     margin: 0px auto;
     &--story1 {
@@ -118,7 +113,7 @@ body {
     max-width: 600px;
     padding-left: 50px;
     font-size: 24px;
-    color: white;
+    color: black;
     &--footer {
       font-size: 16px;
       color: black;
@@ -207,22 +202,18 @@ body {
             order: 2;
           }
         &--placement {
-          width: 600px;
-          height: 600px;
-          background: white;
           align-self: center;
           box-sizing: border-box;
         }
     }
-  }
-    
+  }    
 
   .article-collection {
     padding-top: 100px;
     padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 700px;
-    grid-template-rows: 1fr 650px;
+    grid-template-rows: 1fr;
     grid-column-gap: 5px;
     @media (max-width: $tablet) {
       grid-template-columns: 1fr;
@@ -280,10 +271,10 @@ body {
         align-items: center;
       }
       &__photo {
-        width: 600px;
-        height: 600px;
+        width: 300px;
+        height: 400px;
         box-sizing: border-box;
-        background: white;
+        background: gray;
         padding: 0px;
         display: flex;
           @media (max-width: $tablet) {
