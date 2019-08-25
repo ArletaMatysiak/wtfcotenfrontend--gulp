@@ -1,4 +1,5 @@
-![screen](dist/img/mainScreen.png)
+<<<<<<< HEAD
+! [screen](github/mainScreen.png)
 
 # wtfcotenfrontend--gulp
  
@@ -13,3 +14,4 @@
 
 - git
 - gulp
+
